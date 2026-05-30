@@ -13,12 +13,15 @@
     includeTinyVideos: false,
     minimumArea: 9600,
     position: "top-right",
+    keepScreenAwake: true,
     respectDisablePictureInPicture: false,
     showInlineButton: true
   };
 
   let settings = { ...DEFAULT_SETTINGS };
   const trackedVideos = new Map();
+  let wakeLock = null;
+  let wakeLockRequestPending = false;
   let scanTimer = 0;
 
   const icon = `
@@ -82,6 +85,45 @@
     return [...document.querySelectorAll("video")]
       .filter(isUsableVideo)
       .sort((a, b) => scoreVideo(b) - scoreVideo(a))[0] || null;
+  }
+
+  function hasPlayingVideo() {
+    return [...document.querySelectorAll("video")]
+      .some((video) => isUsableVideo(video) && !video.paused && !video.ended);
+  }
+
+  async function updateWakeLock() {
+    if (!settings.keepScreenAwake || !("wakeLock" in navigator) || !navigator.wakeLock?.request) {
+      if (wakeLock) await releaseWakeLock();
+      return;
+    }
+
+    if (document.visibilityState !== "visible" || !hasPlayingVideo()) {
+      if (wakeLock) await releaseWakeLock();
+      return;
+    }
+
+    if (wakeLock || wakeLockRequestPending) return;
+
+    wakeLockRequestPending = true;
+    try {
+      wakeLock = await navigator.wakeLock.request("screen");
+      wakeLock.addEventListener("release", () => {
+        wakeLock = null;
+      });
+    } catch (_error) {
+      wakeLock = null;
+    } finally {
+      wakeLockRequestPending = false;
+    }
+  }
+
+  async function releaseWakeLock() {
+    const currentWakeLock = wakeLock;
+    wakeLock = null;
+    try {
+      await currentWakeLock?.release?.();
+    } catch (_error) {}
   }
 
   function buttonPoint(rect) {
@@ -223,7 +265,12 @@
 
     video.addEventListener("mouseenter", reveal, true);
     video.addEventListener("mousemove", reveal, true);
-    video.addEventListener("play", reveal, true);
+    video.addEventListener("play", () => {
+      reveal();
+      updateWakeLock();
+    }, true);
+    video.addEventListener("pause", () => updateWakeLock(), true);
+    video.addEventListener("ended", () => updateWakeLock(), true);
     video.addEventListener("loadedmetadata", scheduleUpdate, true);
     video.addEventListener("resize", scheduleUpdate, true);
     video.addEventListener("leavepictureinpicture", reveal, true);
@@ -251,6 +298,7 @@
           if (isUsableVideo(video)) trackVideo(video);
         }
       }
+      updateWakeLock();
       cleanupRemovedVideos();
       requestAnimationFrame(() => {
         for (const video of document.querySelectorAll("video")) updateButton(video);
@@ -266,7 +314,11 @@
 
   window.addEventListener("scroll", scan, true);
   window.addEventListener("resize", scan, true);
-  document.addEventListener("fullscreenchange", scan, true);
+  document.addEventListener("fullscreenchange", () => {
+    scan();
+    updateWakeLock();
+  }, true);
+  document.addEventListener("visibilitychange", () => updateWakeLock(), true);
   document.addEventListener("mousemove", (event) => {
     const video = videoAtPoint(event.clientX, event.clientY);
     if (!video) return;

@@ -15,6 +15,7 @@ If Universal PiP makes Safari better for you, please consider supporting the pro
 - `Option-P` shortcut.
 - Works on dynamic players that replace video elements.
 - Supports accessible iframes.
+- Keeps the screen awake while videos are playing when Safari supports Screen Wake Lock.
 - Includes a separate settings page for placement and behavior.
 - Supports Safari web apps on macOS 15+ when enabled in the web app's own extension settings.
 

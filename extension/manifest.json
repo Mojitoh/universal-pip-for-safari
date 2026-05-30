@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "Universal PiP for Safari",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Adds a Picture in Picture button to HTML5 video players in Safari.",
   "icons": {
     "16": "icons/icon.svg",

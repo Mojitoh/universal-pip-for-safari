@@ -3,6 +3,7 @@ const api = globalThis.browser || globalThis.chrome;
 const DEFAULT_SETTINGS = {
   autoPauseOtherVideos: false,
   includeTinyVideos: false,
+  keepScreenAwake: true,
   minimumArea: 9600,
   position: "top-right",
   respectDisablePictureInPicture: false,

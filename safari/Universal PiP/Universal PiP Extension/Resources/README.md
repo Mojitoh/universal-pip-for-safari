@@ -7,6 +7,7 @@ Safari WebExtension source that adds a Picture in Picture button directly over H
 - Detects HTML5 `<video>` elements on normal pages and in accessible iframes.
 - Adds a native-looking PiP button over each usable video.
 - Keeps the button aligned while the page scrolls, resizes, changes fullscreen state, or swaps players dynamically.
+- Keeps the screen awake while videos are playing when Safari supports Screen Wake Lock.
 - Uses Safari's native `webkitSetPresentationMode("picture-in-picture")` path when available, then falls back to the standard Picture-in-Picture API.
 - Adds a Safari toolbar action and `Option-P` shortcut that target the best visible video.
 
