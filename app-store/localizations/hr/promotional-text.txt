@@ -1,0 +1,1 @@
+Dodajte ciste kontrole slike u slici za Safari videozapise uz lagano open source prosirenje.

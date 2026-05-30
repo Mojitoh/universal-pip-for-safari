@@ -1,0 +1,1 @@
+pip,picture in picture,safari,video,youtube,macos

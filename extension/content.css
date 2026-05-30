@@ -22,10 +22,30 @@
   z-index: 2147483647;
 }
 
+html.universal-pip-fullscreen-active .universal-pip-button {
+  opacity: 0;
+  pointer-events: none;
+}
+
 .universal-pip-button:hover,
 .universal-pip-button:focus-visible,
 .universal-pip-button[data-visible="true"] {
   opacity: 1;
+  pointer-events: auto;
+}
+
+html.universal-pip-fullscreen-idle .universal-pip-button {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
+html.universal-pip-fullscreen-idle .ytp-watermark,
+html.universal-pip-fullscreen-idle .ytp-ce-channel,
+html.universal-pip-fullscreen-idle .ytp-ce-channel-this,
+html.universal-pip-fullscreen-idle .ytp-cards-button,
+html.universal-pip-fullscreen-idle .ytp-cards-teaser {
+  opacity: 0 !important;
+  pointer-events: none !important;
 }
 
 .universal-pip-button:hover,

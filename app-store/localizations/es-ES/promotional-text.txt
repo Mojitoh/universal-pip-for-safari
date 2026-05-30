@@ -1,0 +1,1 @@
+Anade controles Picture-in-Picture limpios a los videos de Safari con una extension ligera y open source.

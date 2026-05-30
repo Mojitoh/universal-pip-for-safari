@@ -1,0 +1,5 @@
+Universal PiP adauga un buton curat imagine-in-imagine pentru videoclipurile web din Safari.
+
+Functioneaza cu playere HTML5 si site-uri video populare, inclusiv YouTube, astfel incat sa poti pastra un videoclip plutitor in timp ce citesti, lucrezi sau navighezi in alta parte. Extensia include si o scurtatura de tastatura si o optiune pentru a mentine ecranul aprins in timpul redarii.
+
+Universal PiP este open source, prietenoasa cu confidentialitatea si discreta: fara urmarire, fara conturi, fara reclame si fara colectare de date.

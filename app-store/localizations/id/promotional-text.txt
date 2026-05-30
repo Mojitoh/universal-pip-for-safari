@@ -1,0 +1,1 @@
+Tambahkan kontrol Picture-in-Picture yang rapi ke video Safari dengan ekstensi ringan dan open source.

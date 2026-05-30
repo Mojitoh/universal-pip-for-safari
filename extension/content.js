@@ -7,6 +7,8 @@
   const BUTTON_SIZE = 34;
   const EDGE_INSET = 12;
   const VISIBILITY_MS = 2200;
+  const FULLSCREEN_IDLE_CLASS = "universal-pip-fullscreen-idle";
+  const FULLSCREEN_ACTIVE_CLASS = "universal-pip-fullscreen-active";
 
   const DEFAULT_SETTINGS = {
     autoPauseOtherVideos: false,
@@ -23,6 +25,7 @@
   let wakeLock = null;
   let wakeLockRequestPending = false;
   let scanTimer = 0;
+  let fullscreenIdleTimer = 0;
 
   const icon = `
     <svg viewBox="0 0 24 24" aria-hidden="true">
@@ -164,10 +167,39 @@
     state.button.style.top = `${Math.round(point.top)}px`;
   }
 
+  function fullscreenElement() {
+    return document.fullscreenElement || document.webkitFullscreenElement || null;
+  }
+
+  function isFullscreenActive() {
+    return Boolean(fullscreenElement());
+  }
+
+  function updateFullscreenClasses(isIdle = false) {
+    const root = document.documentElement;
+    const active = isFullscreenActive();
+    root.classList.toggle(FULLSCREEN_ACTIVE_CLASS, active);
+    root.classList.toggle(FULLSCREEN_IDLE_CLASS, active && isIdle);
+  }
+
+  function markFullscreenUserActive() {
+    if (!isFullscreenActive()) {
+      updateFullscreenClasses(false);
+      return;
+    }
+
+    updateFullscreenClasses(false);
+    clearTimeout(fullscreenIdleTimer);
+    fullscreenIdleTimer = setTimeout(() => {
+      updateFullscreenClasses(true);
+    }, VISIBILITY_MS);
+  }
+
   function showButtonTemporarily(video) {
     const state = trackedVideos.get(video);
     if (!state) return;
 
+    markFullscreenUserActive();
     state.button.dataset.visible = "true";
     clearTimeout(state.visibleTimer);
     state.visibleTimer = setTimeout(() => {
@@ -315,11 +347,29 @@
   window.addEventListener("scroll", scan, true);
   window.addEventListener("resize", scan, true);
   document.addEventListener("fullscreenchange", () => {
+    markFullscreenUserActive();
+    scan();
+    updateWakeLock();
+  }, true);
+  document.addEventListener("webkitfullscreenchange", () => {
+    markFullscreenUserActive();
     scan();
     updateWakeLock();
   }, true);
   document.addEventListener("visibilitychange", () => updateWakeLock(), true);
   document.addEventListener("mousemove", (event) => {
+    if (isFullscreenActive()) {
+      const video = videoAtPoint(event.clientX, event.clientY) || bestVideo();
+      if (!video) {
+        markFullscreenUserActive();
+        return;
+      }
+      trackVideo(video);
+      updateButton(video);
+      showButtonTemporarily(video);
+      return;
+    }
+
     const video = videoAtPoint(event.clientX, event.clientY);
     if (!video) return;
     trackVideo(video);

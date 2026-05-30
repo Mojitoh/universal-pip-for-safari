@@ -1,0 +1,5 @@
+Universal PiP lisaa Safari-verkkovideoihin selkean kuva kuvassa -painikkeen.
+
+Se toimii HTML5-videosoittimien ja suosittujen videosivustojen, kuten YouTuben, kanssa, joten voit pitaa videon kelluvana samalla kun luet, teet toita tai selaat muualla. Laajennuksessa on myos pikanappain ja asetus, joka pitaa nayton hereilla videon toiston aikana.
+
+Universal PiP on avoimen lahdekoodin, yksityisyytta kunnioittava ja huomaamaton: ei seurantaa, ei tileja, ei mainoksia eika datan keruuta.

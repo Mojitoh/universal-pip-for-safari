@@ -1,0 +1,5 @@
+Universal PiP menambahkan tombol Picture-in-Picture yang rapi ke video web di Safari.
+
+Berfungsi dengan pemutar video HTML5 dan situs video populer, termasuk YouTube, sehingga video bisa tetap melayang saat Anda membaca, bekerja, atau menjelajah halaman lain. Ekstensi ini juga menyertakan pintasan keyboard dan opsi untuk menjaga layar tetap menyala saat video diputar.
+
+Universal PiP bersifat open source, ramah privasi, dan dibuat agar tidak mengganggu: tanpa pelacakan, tanpa akun, tanpa iklan, dan tanpa pengumpulan data.

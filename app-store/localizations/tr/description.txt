@@ -1,0 +1,5 @@
+Universal PiP, Safari'deki web videolarina temiz bir Picture-in-Picture dugmesi ekler.
+
+HTML5 video oynaticilari ve YouTube dahil populer video siteleriyle calisir; boylece okurken, calisirken veya baska bir yerde gezinirken video yuzecek sekilde kalabilir. Eklenti ayrica bir klavye kisayolu ve video oynarken ekrani acik tutma secenegi icerir.
+
+Universal PiP acik kaynaklidir, gizlilige saygilidir ve arka planda kalmak icin tasarlanmistir: takip yok, hesap yok, reklam yok ve veri toplama yok.

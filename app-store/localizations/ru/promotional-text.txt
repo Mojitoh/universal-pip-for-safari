@@ -1,0 +1,1 @@
+Добавьте аккуратные элементы Picture-in-Picture к видео Safari с легким open-source расширением.

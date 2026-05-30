@@ -1,0 +1,5 @@
+Universal PiP tilfojer en ren billede-i-billede-knap til webvideoer i Safari.
+
+Den fungerer med HTML5-videoafspillere og populaere videosider, inklusive YouTube, sa du kan holde en video flydende, mens du laeser, arbejder eller browser videre. Udvidelsen har ogsa en tastaturgenvej og en mulighed for at holde skaermen vaagen under afspilning.
+
+Universal PiP er open source, privatlivsvenlig og bygget til at holde sig i baggrunden: ingen sporing, ingen konti, ingen annoncer og ingen dataindsamling.

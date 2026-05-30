@@ -1,0 +1,5 @@
+Universal PiP pridava k webovym videim v Safari ciste tlacitko obraz v obraze.
+
+Funguje s HTML5 prehravaci a oblibenymi videosluzbami vcetne YouTube, takze muzete mit video plovouci pri cteni, praci nebo prohlizeni jinde. Rozsireni obsahuje take klavesovou zkratku a volbu, ktera udrzi obrazovku zapnutou behem prehravani.
+
+Universal PiP je open source, respektuje soukromi a je navrzeno tak, aby neprekazelo: zadne sledovani, zadne ucty, zadne reklamy a zadny sber dat.

@@ -1,0 +1,1 @@
+Ajoutez un bouton Picture-in-Picture propre aux videos Safari avec une extension legere et open source.

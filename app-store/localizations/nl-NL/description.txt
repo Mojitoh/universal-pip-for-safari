@@ -1,0 +1,5 @@
+Universal PiP voegt een nette Picture-in-Picture-knop toe aan webvideo's in Safari.
+
+Het werkt met HTML5-videospelers en populaire videosites, waaronder YouTube, zodat je een video zwevend kunt houden terwijl je leest, werkt of ergens anders browset. De extensie bevat ook een sneltoets en een optie om het scherm wakker te houden tijdens het afspelen.
+
+Universal PiP is open source, privacyvriendelijk en gemaakt om uit de weg te blijven: geen tracking, geen accounts, geen advertenties en geen gegevensverzameling.

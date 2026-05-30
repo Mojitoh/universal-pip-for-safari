@@ -1,0 +1,6 @@
+Universal PiP adds a clean Picture-in-Picture button to web videos in Safari.
+
+It works across HTML5 video players and popular video sites, including YouTube, so you can keep a video floating while you read, work, or browse elsewhere. The extension also includes a keyboard shortcut and an option to keep the screen awake while a video is playing.
+
+Universal PiP is open source, privacy-friendly, and built to stay out of the way: no tracking, no accounts, no ads, and no data collection.
+

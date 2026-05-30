@@ -1,0 +1,5 @@
+Universal PiP ajoute un bouton Picture-in-Picture propre aux videos web dans Safari.
+
+Il fonctionne avec les lecteurs HTML5 et les sites video populaires, dont YouTube, pour garder une video flottante pendant que vous lisez, travaillez ou naviguez ailleurs. L'extension inclut aussi un raccourci clavier et une option pour garder l'ecran allume pendant la lecture.
+
+Universal PiP est open source, respectueux de la vie privee et concu pour rester discret : aucun suivi, aucun compte, aucune publicite et aucune collecte de donnees.

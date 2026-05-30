@@ -1,0 +1,1 @@
+Hafif ve acik kaynakli bir eklentiyle Safari videolarina temiz Picture-in-Picture kontrolleri ekleyin.

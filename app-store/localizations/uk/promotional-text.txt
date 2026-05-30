@@ -1,0 +1,1 @@
+Додавайте зручне керування Picture-in-Picture до відео Safari за допомогою легкої open-source extension.

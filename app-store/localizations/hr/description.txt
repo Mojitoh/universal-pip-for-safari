@@ -1,0 +1,5 @@
+Universal PiP dodaje cist gumb slika u slici web videozapisima u Safariju.
+
+Radi s HTML5 videoplayerima i popularnim video stranicama, ukljucujuci YouTube, kako bi video mogao plutati dok citate, radite ili pregledavate drugdje. Prosirenje ukljucuje i precac na tipkovnici te opciju za odrzavanje zaslona ukljucenim tijekom reprodukcije.
+
+Universal PiP je open source, postuje privatnost i ostaje nenametljiv: bez pracenja, bez racuna, bez oglasa i bez prikupljanja podataka.

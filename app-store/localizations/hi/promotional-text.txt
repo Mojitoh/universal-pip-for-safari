@@ -1,0 +1,1 @@
+हल्के open-source extension के साथ Safari वीडियो में साफ Picture-in-Picture controls जोड़ें.

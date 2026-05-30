@@ -1,0 +1,1 @@
+Dodaj przejrzyste sterowanie obrazem w obrazie do filmow w Safari dzieki lekkiego rozszerzeniu open source.

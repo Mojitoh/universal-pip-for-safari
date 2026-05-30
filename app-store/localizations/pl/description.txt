@@ -1,0 +1,5 @@
+Universal PiP dodaje przejrzysty przycisk obrazu w obrazie do filmow internetowych w Safari.
+
+Dziala z odtwarzaczami HTML5 i popularnymi serwisami wideo, w tym YouTube, dzieki czemu film moze pozostac w plywajacym oknie, gdy czytasz, pracujesz lub przegladasz inne strony. Rozszerzenie zawiera tez skrot klawiaturowy i opcje utrzymywania wlaczonego ekranu podczas odtwarzania.
+
+Universal PiP jest open source, przyjazny prywatnosci i dyskretny: bez sledzenia, kont, reklam i zbierania danych.

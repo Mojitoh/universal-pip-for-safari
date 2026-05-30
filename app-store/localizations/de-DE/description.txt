@@ -1,0 +1,5 @@
+Universal PiP fugt Webvideos in Safari eine klare Bild-in-Bild-Schaltflache hinzu.
+
+Es funktioniert mit HTML5-Videoplayern und beliebten Videoseiten wie YouTube, damit ein Video weiter schwebt, wahrend du liest, arbeitest oder anderswo surfst. Die Erweiterung enthalt auch ein Tastaturkurzel und eine Option, den Bildschirm wahrend der Wiedergabe wach zu halten.
+
+Universal PiP ist Open Source, datenschutzfreundlich und bewusst unaufdringlich: kein Tracking, keine Konten, keine Werbung und keine Datenerfassung.

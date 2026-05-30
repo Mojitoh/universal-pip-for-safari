@@ -1,0 +1,5 @@
+Universal PiP menambah butang Picture-in-Picture yang kemas pada video web dalam Safari.
+
+Ia berfungsi dengan pemain video HTML5 dan laman video popular, termasuk YouTube, supaya video boleh kekal terapung semasa anda membaca, bekerja atau melayari tempat lain. Sambungan ini juga mempunyai pintasan papan kekunci dan pilihan untuk mengekalkan skrin hidup ketika video dimainkan.
+
+Universal PiP ialah open source, mesra privasi dan tidak mengganggu: tiada penjejakan, tiada akaun, tiada iklan dan tiada pengumpulan data.

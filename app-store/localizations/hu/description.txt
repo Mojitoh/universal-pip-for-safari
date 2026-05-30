@@ -1,0 +1,5 @@
+A Universal PiP tiszta kep a kepben gombot ad a Safari webes videoihoz.
+
+Mukodik HTML5-videolejatszokkal es nepszeru videos oldalakkal, peldaul a YouTube-bal, igy a video lebegve maradhat, mikozben olvasol, dolgozol vagy mashol bongeszel. A bovitmeny billentyuparancsot es olyan opciot is tartalmaz, amely lejatszas kozben ebren tartja a kepernyot.
+
+A Universal PiP nyilt forrasu, adatvedelem-barati es visszafogott: nincs kovetes, nincs fiok, nincs reklam es nincs adatgyujtes.

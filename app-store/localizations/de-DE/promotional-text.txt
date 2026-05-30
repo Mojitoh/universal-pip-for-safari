@@ -1,0 +1,1 @@
+Fuge Safari-Videos eine saubere Bild-in-Bild-Steuerung mit einer leichten Open-Source-Erweiterung hinzu.

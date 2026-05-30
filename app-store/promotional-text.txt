@@ -1,0 +1,2 @@
+Add Picture-in-Picture controls to Safari videos with a lightweight, open-source extension.
+

@@ -1,0 +1,1 @@
+Legg til rene bilde-i-bilde-kontroller for Safari-videoer med en lett open source-utvidelse.

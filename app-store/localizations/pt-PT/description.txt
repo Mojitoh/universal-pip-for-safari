@@ -1,0 +1,5 @@
+Universal PiP adiciona um botao Picture-in-Picture claro aos videos web no Safari.
+
+Funciona com leitores HTML5 e sites de video populares, incluindo YouTube, para manter um video flutuante enquanto le, trabalha ou navega noutro lugar. A extensao tambem inclui um atalho de teclado e uma opcao para manter o ecra ligado durante a reproducao.
+
+Universal PiP e open source, respeita a privacidade e foi criado para ser discreto: sem rastreio, sem contas, sem anuncios e sem recolha de dados.

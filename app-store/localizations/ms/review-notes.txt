@@ -1,0 +1,3 @@
+Universal PiP is a Safari Web Extension packaged in a macOS app. To test it, enable the extension in Safari Settings > Extensions, open a page with an HTML5 video such as YouTube, then hover or move the pointer over the video and click the PiP button.
+
+The app does not collect user data. The source code is available at https://github.com/Mojitoh/universal-pip-for-safari

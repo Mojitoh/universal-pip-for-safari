@@ -1,0 +1,1 @@
+Adicione controlos Picture-in-Picture aos videos do Safari com uma extensao leve e open source.

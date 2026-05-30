@@ -1,0 +1,1 @@
+Voeg nette Picture-in-Picture-bediening toe aan Safari-video’s met een lichte open-source extensie.
