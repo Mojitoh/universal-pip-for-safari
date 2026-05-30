@@ -6,6 +6,8 @@ Add a real Picture in Picture button to HTML5 video players in Safari.
 
 Universal PiP is a small open-source Safari WebExtension for macOS. It watches for HTML5 videos, adds a floating PiP button directly on top of the player, and also provides a Safari toolbar button plus an `Option-P` shortcut when the player UI is difficult to reach.
 
+If Universal PiP makes Safari better for you, please consider supporting the project with a coffee. It helps keep the extension free, maintained, and polished.
+
 ## Features
 
 - Inline Picture in Picture button on HTML5 videos.
@@ -67,6 +69,16 @@ Universal PiP tries to cover the common cases without modifying the player's own
 Universal PiP does not collect analytics, does not phone home, and does not store browsing history.
 
 The extension requests broad page access because Safari requires that permission for detecting videos across websites.
+
+## Support the Project
+
+Universal PiP for Safari is free and open source.
+
+If it saves you time, improves your Safari setup, or simply makes watching videos nicer, you are warmly encouraged to support the project with a coffee:
+
+[Buy me a coffee](https://www.buymeacoffee.com/mojitoh)
+
+Every coffee helps keep the extension maintained, polished, and free for everyone.
 
 ## License
 
