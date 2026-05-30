@@ -1,0 +1,47 @@
+.universal-pip-button {
+  align-items: center;
+  appearance: none;
+  background: rgba(15, 16, 18, 0.76);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  border-radius: 999px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.28);
+  box-sizing: border-box;
+  color: white;
+  cursor: default;
+  display: flex;
+  height: 34px;
+  justify-content: center;
+  margin: 0;
+  opacity: 0.78;
+  padding: 0;
+  position: fixed;
+  transform: translate3d(0, 0, 0);
+  transition: opacity 130ms ease, background 130ms ease, transform 130ms ease;
+  user-select: none;
+  width: 34px;
+  z-index: 2147483647;
+}
+
+.universal-pip-button:hover,
+.universal-pip-button:focus-visible,
+.universal-pip-button[data-visible="true"] {
+  opacity: 1;
+}
+
+.universal-pip-button:hover,
+.universal-pip-button:focus-visible {
+  background: rgba(32, 34, 38, 0.92);
+  transform: translate3d(0, 0, 0) scale(1.04);
+}
+
+.universal-pip-button:focus-visible {
+  outline: 2px solid rgba(88, 166, 255, 0.92);
+  outline-offset: 2px;
+}
+
+.universal-pip-button svg {
+  display: block;
+  height: 21px;
+  pointer-events: none;
+  width: 21px;
+}

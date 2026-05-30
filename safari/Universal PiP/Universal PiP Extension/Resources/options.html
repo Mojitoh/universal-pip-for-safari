@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Universal PiP Options</title>
+    <link rel="stylesheet" href="options.css">
+  </head>
+  <body>
+    <main>
+      <h1>Universal PiP</h1>
+      <label>
+        <input id="showInlineButton" type="checkbox">
+        Show a PiP button on videos
+      </label>
+      <label>
+        <input id="autoPauseOtherVideos" type="checkbox">
+        Pause other videos when PiP starts
+      </label>
+      <label>
+        <input id="respectDisablePictureInPicture" type="checkbox">
+        Respect sites that disable Picture in Picture
+      </label>
+      <label>
+        <input id="includeTinyVideos" type="checkbox">
+        Include very small videos
+      </label>
+      <label>
+        Button position
+        <select id="position">
+          <option value="top-right">Top right</option>
+          <option value="top-left">Top left</option>
+          <option value="bottom-right">Bottom right</option>
+          <option value="bottom-left">Bottom left</option>
+        </select>
+      </label>
+      <p id="status" aria-live="polite"></p>
+    </main>
+    <script src="options.js"></script>
+  </body>
+</html>
